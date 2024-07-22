@@ -1,0 +1,206 @@
+:root{
+    --FashionBold: 'FashionBold', Arial;
+    --FashionItalic: 'FashionItalic', Arial;
+    --FashionRegular: 'FashionRegular', Arial;
+    --glossy: 'glossy', Arial;
+    --KonnectLight: 'KonnectLight', Arial;
+    --KonnectMedium: 'KonnectMedium', Arial;
+    --KonnectBold: 'KonnectBold', Arial;
+    --KonnectRegular: 'KonnectRegular', Arial;
+
+    --verdeprincipal: #4C7177; 
+    --verdesecundario: #486E74;
+    --verde-terciario: #263C46;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: 'FashionBold';
+    src: url(../font/Fonts/FashionBold.ttf);
+}
+
+@font-face {
+    font-family: 'FashionItalic';
+    src: url(../font/Fonts/FashionItalic.ttf);
+}
+@font-face {
+    font-family: 'FashionRegular';
+    src: url(../font/Fonts/FashionRegular.ttf);
+}
+@font-face {
+    font-family: 'glossy';
+    src: url(../font/Fonts/glossy.otf);
+}
+@font-face {
+    font-family:'KonnectBold';
+    src: url(../font/Fonts/KonnectBold.otf);
+}
+@font-face {
+    font-family:'KonnectLight';
+    src: url(../font/Fonts/KonnectLight.otf);
+}
+@font-face {
+    font-family:'KonnectMedium';
+    src: url(../font/Fonts/KonnectMedium.otf);
+}
+@font-face {
+    font-family:'KonnectRegular';
+    src: url(../font/Fonts/KonnectRegular.otf);
+}
+
+
+
+/* NAVBAR */
+.logo-nav{
+    width: 250px;
+    object-fit: cover;
+}
+@media (max-width:  600px) {
+    .logo-nav{
+        width: 200px;
+    }
+}
+
+.linea-nav{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+.navbar-nav .nav-item .nav-link{
+    font-family: var(--KonnectRegular);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.banner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.banner-text {
+    width: 100%;
+    color: white;
+    bottom: 0;
+    padding: 2.5rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.678));
+}
+
+.banner-text h1 {
+    font-family: var(--FashionRegular);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+}
+
+@Media (max-width:850px) {
+    .banner-text h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@Media (max-width:680px) {
+    .banner-text h1 {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@Media (max-width:450px) {
+    .banner-text h1 {
+        font-size: 1.2rem;
+    }
+}
+
+.banner-text a {
+    font-family: var(--KonnectLight);
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.info-soluciones {
+    text-align: center;
+}
+
+.info-soluciones h2 {
+    font-family: var(--glossy);
+    font-size: 2.5rem;
+    color: var(--verdeprincipal);
+}
+
+.info-soluciones p {
+    font-family: var(--KonnectLight);
+    font-size: 14px;
+    letter-spacing: 3px;
+    opacity: .8;
+    text-transform: uppercase;
+    color: black;
+}
+.info-soluciones img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.columnas-soluciones {
+    border: 2px solid var(--verdeprincipal);
+}
+
+.columnas-soluciones p {
+    font-family: var(--glossy);
+    font-size: 2.5rem;
+    color: var(--verdesecundario);
+    opacity: 1;
+    line-height: 1;
+    text-transform: inherit;
+}
+
+.container-btn-nosotros{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+.btn-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: var(--verde-terciario);
+    color: white;
+    padding: .5rem 0;
+    font-family: var(--KonnectLight);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+
+/* footer */
+footer{
+    height: auto;
+    background-color: #273D47;
+}
+
+.logo-footer{
+    width: 250px;
+    object-fit: cover;
+}
+
+.form-control::placeholder{
+    color: white;
+}
